@@ -9,23 +9,23 @@
 #compare([ans + (2), 2]) ans = 5(max)
 
 #Kaden's Algorithm Basic Approach(with start and end indices of the subarray).
-start = 0
+from sys import maxsize
 def maxSubArraySum(a,size):     
-	max_so_far =a[0]
-	curr_max = a[0]
-	s = 0
-	for i in range(1,size):
-		curr_max += a[i]		
-		if max_so_far < curr_max:
-			max_so_far = curr_max
+	max_so_far = -maxsize - 1
+	max_ending_here = 0
+	start,end,s = 0,0,0
+ 
+	for i in range(0, size):
+		max_ending_here += a[i]
+		if max_so_far < max_ending_here:
+			max_so_far = max_ending_here
 			start = s
-			print(start, i)
-		if a[i] > curr_max:
-			s = i
-			curr_max = a[i]
-		
-	return max_so_far
+			end = i
 
+		if max_ending_here < 0:
+			max_ending_here = 0
+			s = i+1
+	return max_so_far
 a = [-2, 1, -3, 4, -1, 2]
 print(maxSubArraySum(a, len(a)))
 
@@ -59,4 +59,4 @@ M=[[1,2,-1,-4,-20],
 [-8,-3,4,2,1],
 [3,8,10,1,3],
 [-4,-1,1,7,-6]]
-maximumSumRectangle(R,C,M)
+# maximumSumRectangle(R,C,M)

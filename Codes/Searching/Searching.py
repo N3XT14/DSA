@@ -17,7 +17,7 @@ def binary_search(arr, x):
 
 	while low <= high:
 
-		mid = (high + low) // 2
+		mid = low + ((high - low) // 2) # To avoid integer overflow
 
 		if arr[mid] < x:
 			low = mid + 1
@@ -29,25 +29,79 @@ def binary_search(arr, x):
 
 arr = [ 2, 3, 4, 10, 40 ]
 x = 10
-#print(binary_search(arr, x))
+# print(binary_search(arr, x))
 
-def reverse1(x):
-	if x in range(-9,10):
-		return x
-	limit = 2**31        
-	l = list(str(x))
-	l.reverse()
-	if x < 0:
-		l = l[:-1]
-	rev = ''.join(l)        
-	
-	rev = int(rev)
-	
-	
-	if -limit <= rev <= ( limit - 1):
-		if x < 0:
-			return -rev
-		return rev
-	return 0
+def binary_search_variation1(arr,x):
+	low = 0
+	high = len(arr) - 1
+	mid = 0
+	ans = -1
 
-print(reverse1(9))
+	while low <= high:
+
+		mid = low + ((high - low) // 2) # To avoid integer overflow
+
+		if arr[mid] < x:
+			low = mid + 1
+		elif arr[mid] > x:
+			high = mid - 1		
+		elif arr[mid] == x:
+			ans = mid
+			high = mid - 1	# To find first occurence
+			# low = mid + 1 	# To find last occurence
+	return ans
+
+arr = [ 2, 3, 3, 4, 10, 10, 40 ]
+x = 3
+# print(binary_search_variation1(arr, x))
+
+# Find index of first occurrence of least element
+# greater than key in array i.e upper_bound
+def binary_search_variation2(arr,x):
+	low = 0
+	high = len(arr) - 1
+	mid = 0
+	ans = -1
+
+	while low <= high:
+
+		mid = low + ((high - low + 1) // 2) # To avoid integer overflow
+
+		if arr[mid] < x:
+			low = mid + 1
+		elif arr[mid] > x:
+			ans = mid
+			high = mid - 1		
+		elif arr[mid] == x:
+			low = mid + 1 	
+	return ans
+
+arr = [ 2, 3, 3, 4, 10, 10, 40 ]
+x = 3
+print(binary_search_variation2(arr, x))
+
+
+# Find index of last occurrence of greatest element
+# less than key in array
+def binary_search_variation3(arr,x):
+	low = 0
+	high = len(arr) - 1
+	mid = 0
+	ans = -1
+
+	while low <= high:
+
+		mid = low + ((high - low + 1) // 2) # To avoid integer overflow
+
+		if arr[mid] < x:
+			ans = mid
+			low = mid + 1
+		elif arr[mid] > x:
+			high = mid - 1		
+		elif arr[mid] == x:
+			high = mid - 1 	
+	return ans
+
+arr = [ 2, 3, 3, 4, 10, 10, 40 ]
+x = 3
+print(binary_search_variation3(arr, x))
