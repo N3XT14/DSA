@@ -59,7 +59,7 @@ Complexity:
 Definition:   To sort the elements in a particular order. aesc or desc.
 
 Insertion Sort:        
-    ` The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.`
+    `The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.`
 
     Complexity:
         Time O(n^2)
