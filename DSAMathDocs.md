@@ -57,16 +57,13 @@ $$
 
 # Arithmetic Sequences & Series
 
-`The Arithmetic Sequence is a sequence of numbers
-such that the difference between successive terms
-in the sequence is constant.`
+`The Arithmetic Sequence is a sequence of numbers such that the difference between successive terms in the sequence is constant.`
 
     • The first n values of the arithmetic sequence are:
     • 𝑎, 𝑎 + 𝑑, 𝑎 + 2𝑑, 𝑎 + 3𝑑, ... , 𝑎 + (𝑛 − 1)𝑑.
     • 𝑎 – initial value
     • 𝑑 – difference
     • Example: 1, 4, 7, 10, 13, 16, 19, ... (difference of 3).
-
 
 > The Arithmetic Series is the sum of the terms in the Arithmetic Sequence.
 $$
@@ -78,6 +75,44 @@ $$
 \displaystyle\sum_{i=0}^{n-1} (a+id)=\frac{(a{_1} + a{_n})n}{2}
 $$
 
+---
 
+# Geometric Sequences & Series
+
+`The Geometric Sequence is a sequence of numbers where each successive term is found by multiplying the previous term by a fixed, non-zero, common ratio.`
+
+    • The first n values of the geometric sequence are:
+    • 𝑎, 𝑎𝑟, 𝑎𝑟2, 𝑎𝑟3, ... , 𝑎𝑟𝑛−1
+    • 𝑎 – initial value
+    • 𝑟 ≠ 0 – fixed multiplier
+    • Example: 1, 2, 4, 8, 16, 32, ... (common ratio of 2).
+
+> The Geometric Series is the sum of the terms in the Geometric Sequence.
+$$
+\displaystyle\sum_{i=0}^{n-1} (ar^i)=\frac{a(1 - r^n)}{1-r}
+$$
+
+> When −1 < 𝑟 < 1, the sum of the in infinite geometric progression converges to:
+
+$$
+\displaystyle\sum_{i=0}^{∞} (ar^i)=\frac{a}{1-r} 
+$$
 
 ---
+
+# Harmonic Series
+
+    • The first n values are: 1, 1 2 , 1 3 , ... , 1 𝑛
+    • The sum of these values can be represented with:
+$$
+\displaystyle\\H{_n}=\sum_{i=0}^{n}(\frac{1}{i})
+$$
+    • The harmonic series does not converge, but satisfies the following property:
+    ln(𝑛 + 1) < 𝐻𝑛 ≤ 1 + ln(𝑛)
+
+---
+
+# Limits
+
+`A limit is a way of determining trends for values that may or may not exist`
+
