@@ -58,6 +58,8 @@ Complexity:
 
 Definition:   To sort the elements in a particular order. aesc or desc.
 
+[Code Link](https://github.com/N3XT14/DSA/blob/main/Algorithms/Sorting/Sorting.py)
+
 Insertion Sort:        
     `The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.`
 
@@ -110,6 +112,8 @@ Heap Sort:
 # Searching
 
 Definition:   Used to look for presence of a particular item in a DS.
+
+[Code Link](https://github.com/N3XT14/DSA/blob/main/Algorithms/Searching/Searching.py)
 
 Linear Search (Sequential Search):
 
