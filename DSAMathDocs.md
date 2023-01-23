@@ -115,4 +115,3 @@ $$
 # Limits
 
 `A limit is a way of determining trends for values that may or may not exist`
-
