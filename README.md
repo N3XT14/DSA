@@ -6,5 +6,3 @@ In the process of learning and creation of the Data Structures and Algorithms an
 #### [DSA Docs](https://n3xt14.github.io/DSA/DSADocs)
 
 #### [DSA Math Docs](https://n3xt14.github.io/DSA/DSAMathDocs)
-
-### [Temp](https://github.com/N3XT14/DSA/blob/main/DSAMathDocs.md)
