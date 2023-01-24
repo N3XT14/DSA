@@ -96,76 +96,6 @@
     }; // end ssMobileMenu
 
 
-   /* Search
-    * ------------------------------------------------------ */
-    const ssSearch = function() {
-
-        const searchWrap = document.querySelector('.s-header__search');
-        const searchTrigger = document.querySelector('.s-header__search-trigger');
-
-        if (!(searchWrap && searchTrigger)) return;
-
-        const searchField = searchWrap.querySelector('.s-header__search-field');
-        const closeSearch = searchWrap.querySelector('.s-header__overlay-close');
-        const siteBody = document.querySelector('body');
-
-        searchTrigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            siteBody.classList.add('search-is-visible');
-            setTimeout(function(){
-                searchWrap.querySelector('.s-header__search-field').focus();
-            }, 100);
-        });
-
-        closeSearch.addEventListener('click', function(e) {
-            e.stopPropagation();
-
-            if(siteBody.classList.contains('search-is-visible')) {
-                siteBody.classList.remove('search-is-visible');
-                setTimeout(function(){
-                    searchWrap.querySelector('.s-header__search-field').blur();
-                }, 100);
-            }
-        });
-
-        searchWrap.addEventListener('click', function(e) {
-            if( !(e.target.matches('.s-header__search-inner')) ) {
-                closeSearch.dispatchEvent(new Event('click'));
-            }
-        });
-
-        searchField.addEventListener('click', function(e) {
-            e.stopPropagation();
-        })
-
-        searchField.setAttribute('placeholder', 'Search for...');
-        searchField.setAttribute('autocomplete', 'off');
-
-    }; // end ssSearch
-
-
-   /* Masonry
-    * ------------------------------------------------------ */
-    const ssMasonry = function() {
-        const containerBricks = document.querySelector('.bricks-wrapper');
-        if (!containerBricks) return;
-
-        imagesLoaded(containerBricks, function() {
-
-            const msnry = new Masonry(containerBricks, {
-                itemSelector: '.entry',
-                columnWidth: '.grid-sizer',
-                percentPosition: true,
-                resize: true
-            });
-
-        });
-
-    }; // end ssMasonry
-
-
    /* Slick Slider
     * ------------------------------------------------------ */
     const ssSlickSlider = function() {
@@ -299,8 +229,6 @@
 
         ssPreloader();
         ssMobileMenu();
-        ssSearch();
-        ssMasonry();
         ssSlickSlider();
         ssAOS();
         ssAlertBoxes();
