@@ -16,6 +16,9 @@ e^{i\pi} + 1 = 0
 \sqrt{3}
 ```
 
+$${\color{red}\sum\limits_{\color{lightblue}i=0}^{\color{orange}n} {\color{pink}i}} = \frac{\color{pink}n!}{\color{lightblue}k!(n-k)!}$$
+
+
 and inline math $`a^2 + b^2 = c^2`$.
 
 This expression uses `\$` to display a dollar sign: $\sqrt{\$4}$
