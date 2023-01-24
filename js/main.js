@@ -228,12 +228,12 @@
     (function ssInit() {
 
         ssPreloader();
-        ssMobileMenu();
-        ssSlickSlider();
-        ssAOS();
-        ssAlertBoxes();
-        ssSmoothScroll();
-        ssBackToTop();
+        // ssMobileMenu();
+        // ssSlickSlider();
+        // ssAOS();
+        // ssAlertBoxes();
+        // ssSmoothScroll();
+        // ssBackToTop();
 
     })();
 
