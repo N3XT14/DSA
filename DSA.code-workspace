@@ -1,6 +1,15 @@
 {
 	"folders": [
 		{
+			"name": "css",
+			"path": "C:/Users/Yash Oswal/Downloads/Calvin_1_0_0/Calvin_1_0_0/css"
+		},
+		{
+			"name": "js",
+			"path": "C:/Users/Yash Oswal/Downloads/Calvin_1_0_0/Calvin_1_0_0/js"
+		},
+		{
+			"name": "DSA And Algo - Python",
 			"path": "."
 		}
 	],
