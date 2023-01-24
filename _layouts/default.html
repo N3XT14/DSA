@@ -29,7 +29,33 @@
 
       <!-- header
       ================================================== -->
-      
+      <header class="s-header">
+
+        <div class="s-header__logo">
+            <a class="logo" href="default.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+
+        <div class="row s-header__navigation">
+
+            <nav class="s-header__nav-wrap">
+
+                <h3 class="s-header__nav-heading h6">Navigate to</h3>
+
+                <ul class="s-header__nav">
+                    <li class="current"><a href="https://n3xt14.github.io/DSA/" title="">Home</a></li>
+                </ul> <!-- end s-header__nav -->
+
+                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
+
+            </nav> <!-- end s-header__nav-wrap -->
+
+        </div> <!-- end s-header__navigation -->
+
+        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+      </header> 
       <!-- end s-header -->
       <section>
 
@@ -44,7 +70,7 @@
       </footer> -->
     
     <!-- <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script> -->
-    {% if site.google_analytics %}
+    <!-- {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -52,7 +78,7 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
-    </script>
+    </script> -->
     {% endif %}
   </body>
 </html>
