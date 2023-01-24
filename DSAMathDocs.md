@@ -5,34 +5,8 @@ Revise the basics of the maths needed for working alongside with DSA.
 ---
 # Logarithms
 
-Display math:
-```math
-e^{i\pi} + 1 = 0
-```
 
-**Here is some math!**
-
-```math
-\sqrt{3}
-```
-
-$${\color{red}\sum\limits_{\color{lightblue}i=0}^{\color{orange}n} {\color{pink}i}} = \frac{\color{pink}n!}{\color{lightblue}k!(n-k)!}$$
-
-
-and inline math $`a^2 + b^2 = c^2`$.
-
-This expression uses `\$` to display a dollar sign: $\sqrt{\$4}$
-
-To split <span>$</span>100 in half, we calculate $100/2$
-
-This sentence uses `$` delimiters to show math inline:  $`\sqrt{3x-1}+(1+x)^2`$
-
-This sentence uses `$` delimiters to show math inline:  $\log{_a{b}}$
-
-**The Cauchy-Schwarz Inequality**
-
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
-
+<!-- $${\color{red}\sum\limits_{\color{lightblue}i=0}^{\color{orange}n} {\color{pink}i}} = \frac{\color{pink}n!}{\color{lightblue}k!(n-k)!}$$ -->
 
 $$
 y = bx \\
@@ -95,11 +69,13 @@ $$
     • Example: 1, 4, 7, 10, 13, 16, 19, ... (difference of 3).
 
 > The Arithmetic Series is the sum of the terms in the Arithmetic Sequence.
+
 $$
 \displaystyle\sum_{i=0}^{n-1} (a+id)=\frac{(2a + (n-1)d)n}{2}
 $$
 
 > Let $𝑎{_1} = 𝑎$  𝑎𝑛d $a{_n} = 𝑎 + (𝑛 − 1)𝑑$
+
 $$
 \displaystyle\sum_{i=0}^{n-1} (a+id)=\frac{(a{_1} + a{_n})n}{2}
 $$
@@ -117,6 +93,7 @@ $$
     • Example: 1, 2, 4, 8, 16, 32, ... (common ratio of 2).
 
 > The Geometric Series is the sum of the terms in the Geometric Sequence.
+
 $$
 \displaystyle\sum_{i=0}^{n-1} (ar^i)=\frac{a(1 - r^n)}{1-r}
 $$
