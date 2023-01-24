@@ -9,7 +9,18 @@ Display math:
 ```math
 e^{i\pi} + 1 = 0
 ```
+
+**Here is some math!**
+
+```math
+\sqrt{3}
+```
+
 and inline math $`a^2 + b^2 = c^2`$.
+
+This expression uses `\$` to display a dollar sign: $\sqrt{\$4}$
+
+To split <span>$</span>100 in half, we calculate $100/2$
 
 This sentence uses `$` delimiters to show math inline:  $`\sqrt{3x-1}+(1+x)^2`$
 
