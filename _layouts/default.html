@@ -13,12 +13,26 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
     
-    <!-- Custom CSS -->
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
 
   </head>
   <body>
     <div class="wrapper" style="margin: 0px 20px !important; width: auto !important;">
+
+      <!-- preloader
+      ================================================== -->
+      <div id="preloader"> 
+        <div id="loader"></div>
+      </div>
+
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
