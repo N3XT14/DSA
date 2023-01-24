@@ -1,4 +1,4 @@
-# Math for Data Structures and
+# Math for Data Structures and Algorithms
 
 Revise the basics of the maths needed for working alongside with DSA.
 
