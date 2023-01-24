@@ -7,11 +7,6 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-
-     <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
    
     <!-- MathJax -->
     <script type="text/javascript"
@@ -19,58 +14,47 @@
     </script>
     
   </head>
-  <body>    
-      <!-- preloader
-      ================================================== -->
-      <!-- <div id="preloader"> 
-        <div id="loader"></div>
-      </div> -->
+  <body>
+    <div class="wrapper" style="margin: 0 20;">
+      <header>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
 
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-      <!-- header
-      ================================================== -->
-      <header class="s-header">
+        {% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
 
-        <div class="s-header__logo">
-            <a class="logo" href="default.html">
-                <img src="images/logo.png" alt="Homepage">
-            </a>
-        </div>
+        {% if site.github.is_user_page %}
+        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %}
 
-        <div class="row s-header__navigation">
-
-            <nav class="s-header__nav-wrap">
-
-                <h3 class="s-header__nav-heading h6">Navigate to</h3>
-
-                <ul class="s-header__nav">
-                    <li class="current"><a href="https://n3xt14.github.io/DSA/" title="">Home</a></li>
-                </ul> <!-- end s-header__nav -->
-
-                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
-
-            </nav> <!-- end s-header__nav-wrap -->
-
-        </div> <!-- end s-header__navigation -->
-
-        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
-
-      </header> 
-      <!-- end s-header -->
+        {% if site.show_downloads %}
+        <ul class="downloads">
+          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+        </ul>
+        {% endif %}
+      </header>
       <section>
 
       {{ content }}
 
       </section>
-      <!-- <footer>
+      <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer> -->
-    
-    <!-- <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script> -->
-    <!-- {% if site.google_analytics %}
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -78,7 +62,7 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
-    </script> -->
+    </script>
     {% endif %}
   </body>
 </html>
