@@ -11,7 +11,7 @@ e^{i\pi} + 1 = 0
 ```
 and inline math $`a^2 + b^2 = c^2`$.
 
-This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+This sentence uses `$` delimiters to show math inline:  $`\sqrt{3x-1}+(1+x)^2`$
 
 This sentence uses `$` delimiters to show math inline:  $\log{_a{b}}$
 
