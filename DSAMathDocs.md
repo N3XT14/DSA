@@ -124,7 +124,7 @@ $$
 
 `A limit is a way of determining trends for values that may or may not exist`
 
-> The definition of a limit follows such that if 0 < |x-c| < δ then |f(x) - l| < ɛ:
+The definition of a limit follows such that if 0 < |x-c| < δ then |f(x) - l| < ɛ:
 
 $$
 \lim\limits_{x \to c}f(x) = l\\
