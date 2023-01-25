@@ -123,3 +123,41 @@ $$
 # Limits
 
 `A limit is a way of determining trends for values that may or may not exist`
+
+> The definition of a limit follows such that if 0 < |x-c| < δ then |f(x) - l| < ɛ:
+
+$$
+\lim\limits_{x \to c}f(x) = l\\
+$$
+
+Rules:
+
+$$
+\lim\limits_{x \to c}b = b\\
+\lim\limits_{x \to c}x = c\\
+\lim\limits_{x \to c}x^n = c^n
+$$
+
+Constants can be pulled out of limits when a ∈ ℝ and $\lim\limits_{x \to c}f(x) = l$
+
+$$
+\lim\limits_{x \to c}(a)(f(x)) = (a)(l)
+$$  
+
+The limit of a sum is the sum of the limits
+
+$$
+\lim\limits_{x \to c}(f(x) + g(x)) = limits_{x \to c}f(x) + limits_{x \to c}g(x)
+$$  
+
+The limit of a product is the product of the limits
+
+$$
+\lim\limits_{x \to c}(f(x) \times g(x)) = limits_{x \to c}f(x) \times limits_{x \to c}g(x)
+$$ 
+
+The limit of a quotient is the quotient of the limits, when divisor is not 0 such that $\lim\limits_{x \to c}g(x) ≠ 0$.
+
+$$
+\lim\limits_{x \to c}(f(x) \div g(x)) = limits_{x \to c}f(x) \div limits_{x \to c}g(x)
+$$ 
