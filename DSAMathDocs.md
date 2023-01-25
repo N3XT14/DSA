@@ -110,9 +110,11 @@ $$
 
     • The first n values are: 1, 1 2 , 1 3 , ... , 1 𝑛
     • The sum of these values can be represented with:
+    
 $$
 \displaystyle\\H{_n}=\sum_{i=0}^{n}(\frac{1}{i})
 $$
+
     • The harmonic series does not converge, but satisfies the following property:
     ln(𝑛 + 1) < 𝐻𝑛 ≤ 1 + ln(𝑛)
 
