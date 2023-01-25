@@ -130,7 +130,7 @@ $$
 \lim\limits_{x \to c}f(x) = l\\
 $$
 
-Rules:
+### Rules:
 
 $$
 \lim\limits_{x \to c}b = b\\
@@ -161,3 +161,17 @@ The limit of a quotient is the quotient of the limits, when divisor is not 0 suc
 $$
 \lim\limits_{x \to c}(f(x) \div g(x)) = limits_{x \to c}f(x) \div limits_{x \to c}g(x)
 $$ 
+
+---
+
+# Derivatives
+
+`Derivatives are a measure of how a function changes with respect to its input.`
+
+    For a real-valued function of a single real variable, the derivative at a point is the slope of the tangent line to the graph of the function at that point.
+
+### Rules:
+
+When $p(x) = x^n$ and  n ≠ 0, $p^`(x) =  (n)(x^{n-1})$
+
+---
