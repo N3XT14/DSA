@@ -124,7 +124,7 @@ $$
 
 `A limit is a way of determining trends for values that may or may not exist`
 
-The definition of a limit follows such that if 0 < |x-c| < δ then |f(x) - l| < ɛ:
+The definition of a limit follows such that if $0< |x-c| < \delta$ then $|f(x) - 1| < \varepsilon$
 
 $$
 \lim\limits_{x \to c}f(x) = l\\
@@ -172,6 +172,8 @@ $$
 
 ### Rules:
 
-When $p(x) = x^n$ and  n ≠ 0, $p^`(x) =  (n)(x^{n-1})$
+    • When $p(x) = x^n$ and  n ≠ 0, $p^`(x) =  (n)(x^{n-1})$
+    • ${f(x)g(x)}` = ((f(x))(g`(x))) + ((f`(x))(g(x)))$
+
 
 ---
