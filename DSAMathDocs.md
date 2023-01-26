@@ -9,22 +9,30 @@ Revise the basics of the maths needed for working alongside with DSA.
 <!-- $${\color{red}\sum\limits_{\color{lightblue}i=0}^{\color{orange}n} {\color{pink}i}} = \frac{\color{pink}n!}{\color{lightblue}k!(n-k)!}$$ -->
 
 $$
-y = bx \\
-log{_b}{y}=log{_b}{bx}\\
+y = bx \\\\
+log{_b}{y}=log{_b}{bx}\\\\
 log{_b}{y}={x}
 $$
 
-$$
-log{_a}{(xy)}  = log{_a}{x} + log{_a}{y}\\
-log{_a}{(x/y)} = log{_a}{x} - log{_a}{y}\\
-log{_a}{(x^y)} = ylog{_a}{x}\\
-log{_a}{(x)} = \frac{log{_b}{(x)}}{log{_b}{(a)}}\\
-x^{log{_b}{(y)}} = y^{log{_b}{(x)}}\\
-lg(x) = log{_2}{x}\\
-ln(x) = log{_e}{x}\\
-log^k(n) = (log(n))^k\\
-lglg(n) = lg(lg(n))
-$$
+### Rules:
+
+• $log{_a}{(x/y)} = log{_a}{x} - log{_a}{y} $
+
+• $log{_a}{(xy)}  = log{_a}{x} + log{_a}{y} $
+
+• $log{_a}{(x^y)} = ylog{_a}{x}$
+
+• $log{_a}{(x)} = \frac{log{_b}{(x)}}{log{_b}{(a)}}$
+
+• $x^{log{_b}{(y)}} = y^{log{_b}{(x)}}$
+
+• $lg(x) = log{_2}{x}$
+
+• $ln(x) = log{_e}{x}$
+
+• $log^k(n) = (log(n))^k$
+
+• $lglg(n) = lg(lg(n))$
 
 ---
 
