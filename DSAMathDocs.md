@@ -248,22 +248,26 @@ The number of 2-permutations of S(k=2) with |S| = n = 3 is:
 
     • We use the notation (𝑛/𝑘) (read: n choose k) to denote the number of k-combinations.
 
-    Properties:
+Properties:
 
-    • (nCk)=(nC(n−k))
-    • (nCk)=((n-1)Ck) + ((n−1)C(k-1))
-    • (nCk)>=(nCk)^k
-    • (nCk)<=((n^k)Ck!)
+• $\binom{n}{k}=(nC(n−k))$
+
+• $\binom{n}{k}=\binom{n-1}{k} + \binom{n-1}{k-1}$
+
+• $\binom{n}{k}>=\binom{n}{k}^k$
+
+• $\binom{n}{k}<=\binom{(n^k)}{k!}$
+
 • Binomial Coefficients can be used in binomial expansion. Binomial expansion is given by: 
     
 $$
-\displaystyle(x+a)^n = \sum_{k=0}^{n} (nCk)(x^k)(a^{(n-k)})
+\displaystyle(x+a)^n = \sum_{k=0}^{n} \binom{n}{k}(x^k)(a^{(n-k)})
 $$
 
-In particular, when x = a = 1, we have:
+• In particular, when x = a = 1, we have:
 
 $$
-\displaystyle(2)^n = \sum_{k=0}^{n} (nCk)
+\displaystyle(2)^n = \sum_{k=0}^{n}\binom{n}{k}
 $$
 
 
