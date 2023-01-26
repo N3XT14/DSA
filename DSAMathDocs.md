@@ -172,8 +172,35 @@ $$
 
 ### Rules:
 
-    • When $p(x) = x^n$ and  n ≠ 0, $p^`(x) =  (n)(x^{n-1})$
-    • ${f(x)g(x)}` = ((f(x))(g`(x))) + ((f`(x))(g(x)))$
+• When $p(x) = x^n$ and  n ≠ 0, $p^`(x) =  (n)(x^{n-1})$
 
+• ${f(x)g(x)}` = ((f(x))(g`(x))) + ((f`(x))(g(x)))$
+
+• $(\frac{f}{g})$\` $(x)$ = $\frac{((g(x))(f\`(x)) - (g\`(x))(f(x)))}{(g(x)^2)}$
+
+• $(\frac{d}{dx})(f(g(x)))$ = $f\`(g(x)g\`(x))$
+
+• $(\frac{d}{dx})(ln(x))$ = $\frac{1}{x}$
+
+• $(\frac{d}{dx})(e^{x})$ = $e^{x}$
+
+• $(\frac{d}{dx})(e^{f(x)})$ = $(e^{f(x)})(f\`(x))$
+
+• $(\frac{d}{dx})p^{x}$ = $p^{x}(ln(p))$
+
+• $(\frac{d}{dx})(p^{g(x)})$ = $(p^{g(x)})(g\`(x))(ln(p))$
+
+• $(\frac{d}{dx})(\log{_p}{(g(x))})$ = $\frac{g\`(x)}{(g(x))ln(p)}$
+
+---
+
+# L'Hopital's Rule
+
+`Assume 𝑓(𝑥) and 𝑔 𝑥 are both differentiable, with derivatives 𝑓′(𝑥) and 𝑔′(𝑥) respectively. Further, assume that 𝑐 ∈ ℝ.`
+
+$$
+\lim\limits_{x \to c}\frac{f(x)}{g(x)} = \frac{0}{0}\ or \ \lim\limits_{x \to c}\frac{f(x)}{g(x)} = \frac{±\infty}{±\infty} \ and \ \lim\limits_{x \to c}\frac{f\`(x)}{g\`(x)} \ exists, \\
+then \ \lim\limits_{x \to c}\frac{f(x)}{g(x)} = \lim\limits_{x \to c}\frac{f\`(x)}{g\`(x)}
+$$ 
 
 ---
