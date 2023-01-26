@@ -204,11 +204,67 @@ $$
 
 # L'Hopital's Rule
 
-`Assume 𝑓(𝑥) and 𝑔 𝑥 are both differentiable, with derivatives 𝑓′(𝑥) and 𝑔′(𝑥) respectively. Further, assume that 𝑐 ∈ ℝ.`
+`Assume 𝑓(𝑥) and 𝑔(𝑥) are both differentiable, with derivatives 𝑓′(𝑥) and 𝑔′(𝑥) respectively. Further, assume that 𝑐 ∈ ℝ.`
 
 $$
 \lim\limits_{x \to c}\frac{f(x)}{g(x)} = \frac{0}{0}\ or \ \lim\limits_{x \to c}\frac{f(x)}{g(x)} = \frac{±\infty}{±\infty} \ and \ \lim\limits_{x \to c}\frac{f\`(x)}{g\`(x)} \ exists, \\
 then \ \lim\limits_{x \to c}\frac{f(x)}{g(x)} = \lim\limits_{x \to c}\frac{f\`(x)}{g\`(x)}
 $$ 
+
+---
+
+# Permutations
+
+`A K-Permutation is an ordered subsequence of k distinct elements of a set S.`
+
+    • The number of k-permutations of a set 𝑆, with |𝑆| = 𝑛 is:
+                    n(n-1)(n-2)...(n-k+1) = n!/(n-k)!
+
+    • When S = {a,b,c}, the 2-permutations are {ab, ac, ba, bc, ca, cb}.
+
+> Example:
+
+The number of 2-permutations of S(k=2) with |S| = n = 3 is: 
+3(3 − 1) = 3!/(3 − 2)! = 6/1 = 6.
+
+---
+
+# Combinations
+
+`A K-Combination is an un-ordered subsequence of k distinct elements of a set S`
+
+    • The number of k-combinations of a set 𝑆, with |𝑆| = 𝑛 is:
+                    n!/((n-k)!k!)
+
+    • When S = {a,b,c}, the 2-combinations are {ab, ac, bc}.
+
+> Example:
+
+The number of 2-permutations of S(k=2) with |S| = n = 3 is: 
+3!/((3 − 2)!(2!)) = 6/2 = 3.
+
+
+### Binomial Coefficients:
+
+    • We use the notation (𝑛/𝑘) (read: n choose k) to denote the number of k-combinations.
+
+    Properties:
+
+    • (nCk)=(nC(n−k))
+    • (nCk)=((n-1)Ck) + ((n−1)C(k-1))
+    • (nCk)>=(nCk)^k
+    • (nCk)<=((n^k)Ck!)
+• Binomial Coefficients can be used in binomial expansion. Binomial expansion is given by: 
+    
+$$
+\displaystyle(x+a)^n = \sum_{k=0}^{n} (nCk)(x^k)(a^{(n-k)})
+$$
+
+In particular, when x = a = 1, we have:
+
+$$
+\displaystyle(2)^n = \sum_{k=0}^{n} (nCk)
+$$
+
 
 ---
