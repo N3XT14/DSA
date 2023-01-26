@@ -9,8 +9,8 @@ Revise the basics of the maths needed for working alongside with DSA.
 <!-- $${\color{red}\sum\limits_{\color{lightblue}i=0}^{\color{orange}n} {\color{pink}i}} = \frac{\color{pink}n!}{\color{lightblue}k!(n-k)!}$$ -->
 
 $$
-y = bx \\\\
-log{_b}{y}=log{_b}{bx}\\\\
+y = bx ;\\
+log{_b}{y}=log{_b}{bx} ;\\
 log{_b}{y}={x}
 $$
 
@@ -182,7 +182,7 @@ $$
 
 • When $p(x) = x^n$ and  n ≠ 0, $p^`(x) =  (n)(x^{n-1})$
 
-• $f(x)g(x)`$ = $((f(x))(g\`(x))) + ((f\`(x))(g(x)))$
+• $(f(x)g(x)`)$ = $((f(x))(g\`(x))) + ((f\`(x))(g(x)))$
 
 • $(\frac{f}{g})$\` $(x)$ = $\frac{((g(x))(f\`(x)) - (g\`(x))(f(x)))}{(g(x)^2)}$
 
